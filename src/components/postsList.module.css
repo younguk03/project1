@@ -1,0 +1,65 @@
+
+.loading_or_error {
+   padding: 15px;
+   text-align: center;
+   font-weight: bold;
+   color: gray;
+   width: 550px;
+   font-size: 22px;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1px solid rgb(237, 237, 237);
+   border-radius: 15px;
+}
+
+.post_list {
+   border: 1px solid rgb(67, 67, 67);
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 10px;
+   margin-bottom: 10px;
+   padding: 20px;
+   padding-bottom: 10px;
+}
+
+.list {
+   border-bottom: 1px solid black;
+   width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 10px;
+   margin-bottom: 15px;
+}
+
+@media (max-width:1000px) {
+   .list {
+      width: 850px;
+   }
+}.description {
+   font-size: small;
+   overflow: hidden;
+   color: rgb(92, 92, 92);
+}
+
+.kategorie {
+   font-size: 11px;
+   color: rgb(184, 184, 184);
+}
+.remove_btn {
+   border: 1px solid red;
+   color: white;
+   background-color: red;
+   padding: 2px;
+   border-radius: 5px;
+   font-size: 13px;
+}
+.edit_btn {
+   margin-left: 10px;
+   border: 1px solid black;
+   color: white;
+   background-color: black;
+   padding: 2px;
+   border-radius: 5px;
+   font-size: 13px;
+}

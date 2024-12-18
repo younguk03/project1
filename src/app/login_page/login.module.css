@@ -1,0 +1,23 @@
+.container {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   left:0px;
+   top:0px;
+   background-color: #f0f0f0;
+   padding-top: 150px;
+   justify-content: center;
+   text-align: center;
+}
+
+.border {
+   border: 1px rgb(177, 177, 177) solid;
+   text-align: center;
+   width: 500px;
+   margin-top: 40px;
+   margin-bottom: auto;
+   background-color: white;
+   display: inline-block;
+   padding-bottom: 20px;
+   border-radius: 10px;
+}
