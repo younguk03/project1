@@ -41,7 +41,7 @@ export default function Header() {
                         <span className="font-bold">
                            {session?.user?.name}
                         </span>
-                        <button onClick={() => signOut()} className={styles.login}>회원가입</button>
+                        <button onClick={() => signOut()} className={styles.login}>로그아웃</button>
                      </div>
                   </>
                ) : (
