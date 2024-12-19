@@ -4,6 +4,7 @@ import styles from './postsList.module.css'
 import { Post } from "@/types/Post"
 import RemoveBtn from "./RemoveBtn"
 import Link from "next/link"
+import { useSession } from "next-auth/react"
 
 
 interface PostsListProps {
@@ -13,6 +14,8 @@ interface PostsListProps {
 export default function PostsList({ posts }: PostsListProps) {
    const [loading] = useState('')
    const [error] = useState<string | null>(null);
+   const { status, data: session } = useSession();
+   console.log(session)
    if (loading) return (
       <div className={styles.loading_or_error}>
          로딩중입니다!
@@ -33,10 +36,12 @@ export default function PostsList({ posts }: PostsListProps) {
                   
                   <div className={styles.description}>{post.description}</div>
                   <div className={styles.kategorie}>-{post.kategorie}-</div>
-                  <div>
-                     <span className={styles.remove_btn}><RemoveBtn id={post._id} /></span>
+                  {status === 'authenticated' && (
+                     <div>
+                        <span className={styles.remove_btn}><RemoveBtn id={post._id} /></span>
                      <span className={styles.edit_btn}><Link href={`/editPost/${post._id}`}>수정</Link></span>
                   </div>
+                  )}
                </div>
             ))}
 
