@@ -18,6 +18,7 @@ export default async function Home() {
         <Header />
       </div>
       <div>
+        <h1 className='text-3xl font-bold mb-2 m-2 mt-10 ml-60 '>내 노트장</h1>
         <div className="m-10 mr-16 ml-16">
           <Suspense fallback={<div>로딩 중...</div>}>
             <PostsList posts={posts} />
