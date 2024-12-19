@@ -60,7 +60,7 @@ export default function AddPostForm() {
                </select>
                </div>
                <div className='flex justify-center'>
-                  <button type='submit' className={styles.submit}>수정</button>
+                  <button type='submit' className={styles.submit}>글 추가</button>
                </div>
             </form>
          </div>
